@@ -6,7 +6,6 @@ public class Aluno extends Pessoa {
 
     Historico historico;
     Semestre semestreAtual;
-    GradeCurricular grade;
 
     // TUTORIAL PARA A CONTRUÇÃO DO BUILDER
     // https://ducmanhphan.github.io/2020-04-06-how-to-apply-builder-pattern-with-inhertitance/
@@ -19,13 +18,12 @@ public class Aluno extends Pessoa {
         this.orientador = builder.orientador;
         this.semestreAtual = builder.semestreAtual;
         this.historico = builder.historico;
-        this.grade = builder.grade;
     }
 
     @Override
     public String toString() {
         return ">> Aluno [" + super.toString() +  "\n         coeficiente=" + coeficiente + ", matricula="
-        + matricula + ", grade=" + grade + ", historico=" + historico + ", orientador=" + orientador + ", semestreAtual=" + semestreAtual + "]";
+        + matricula + ", historico=" + historico + ", orientador=" + orientador + ", semestreAtual=" + semestreAtual + "]";
     }
 
     public static Builder builder(){
@@ -102,14 +100,6 @@ public class Aluno extends Pessoa {
 
     public void setSemestreAtual(Semestre semestreAtual) {
         this.semestreAtual = semestreAtual;
-    }
-
-    public GradeCurricular getGrade() {
-        return grade;
-    }
-
-    public void setGrade(GradeCurricular grade) {
-        this.grade = grade;
     }
 
 

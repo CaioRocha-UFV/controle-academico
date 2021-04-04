@@ -4,12 +4,23 @@ import java.util.HashMap;
 // import entities.Disciplina;
 
 public class Historico {
-    private HashMap<String, Disciplina> disciplinasCursadas;
-    private ArrayList<Double> notas;
-    private String semestre;
-    private double coeficiente;
-    private Curso grade; //Curso?
 
+    private HashMap<String, Disciplina> disciplinasCursadas;
+
+    public Historico(HashMap<String, Disciplina> disciplinasCursadas){
+        this.disciplinasCursadas = disciplinasCursadas;
+    }
+    
+    
+    
+    
+    
+    //private ArrayList<Double> notas;
+    //private String semestre;
+    //private double coeficiente;
+    //private Curso grade; //Curso?
+
+    /*
     public Historico(ArrayList<Double> notas, String semestre, double coeficiente, Curso grade){
         this.notas = notas;
         this.semestre = semestre;
@@ -18,7 +29,7 @@ public class Historico {
     }
     
 
-    /* Getters  */
+    // Getters
     public HashMap<String, Disciplina> getDisciplinasCursadas() {
         return disciplinasCursadas;
     }
@@ -40,7 +51,7 @@ public class Historico {
         return this.grade;    
     }
     
-    /* Setters */
+    // Setters 
     public void setDisciplinasCursadas(HashMap<String, Disciplina> disciplinasCursadas) {
         this.disciplinasCursadas = disciplinasCursadas;
     }
@@ -60,4 +71,5 @@ public class Historico {
     public void setGrade(Curso grade){
         this.grade = grade;
     }
+    */
 }

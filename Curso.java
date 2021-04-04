@@ -3,12 +3,16 @@ import java.util.HashMap;
 //import entities.GradeCurricular;
 
 public class Curso {
+
     private String codigo;
     private String nome;
+
     private Professor coordenador;
+
     private GradeCurricular gradePadrao;
+
     private HashMap<String, Professor> professores = new HashMap<String, Professor>();
-    private int alunosMatriculados; // Ver se eh uma informacao cabivel no contexto presente
+    private HashMap<String, Aluno> alunos = new HashMap<String, Aluno>();
 
 
     /*
@@ -45,9 +49,6 @@ public class Curso {
         return professores;
     }
 
-    public int getAlunosMatriculados() {
-        return alunosMatriculados;
-    }
 
 
     /*
@@ -72,10 +73,6 @@ public class Curso {
 
     public void setProfessores(HashMap<String, Professor> professores) {
         //this.professores.put(professores.getNome(), professores);
-    }
-
-    public void setAlunosMatriculados(int alunosMatriculados) {
-        this.alunosMatriculados = alunosMatriculados;
     }
 
 }

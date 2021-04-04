@@ -1,12 +1,16 @@
 import java.sql.Date;
+import java.util.HashMap;
 
 public class Pessoa {
+
     String cpf;
     String nome;
     String email;
     String celular;
     //Date dataNascimento;
     String dataNascimento;
+
+    public static HashMap<String, Pessoa> todasAsPessoas;
 
     // TUTORIAL PARA A CONTRUÇÃO DO BUILDER
     // https://ducmanhphan.github.io/2020-04-06-how-to-apply-builder-pattern-with-inhertitance/

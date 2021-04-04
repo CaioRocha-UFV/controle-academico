@@ -108,6 +108,7 @@ public class Menu {
                 .matricula(tokens2[0])
                 .coeficiente(Float.parseFloat(tokens2[1]))
                 .CriarAluno();
+
         
         System.out.println("\n" + aluno.toString() + "\n");
     }

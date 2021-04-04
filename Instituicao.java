@@ -10,6 +10,8 @@ public class Instituicao {
     private HashMap<String, Curso> cursos;
     private HashMap<String, Departamento> departamentos;
 
+    public static HashMap<String, Instituicao> todasAsInstituicoes;
+
 
     public Instituicao(String nome){
         this.nome = nome;

@@ -2,13 +2,14 @@ import java.util.HashMap;
 
 public class Departamento {
     
+    private String codigo;
     private String nome;
-    private HashMap<String, Curso> cursosAssociados = new HashMap<String, Curso>();
-    private Professor diretor;
     private String email;
     private String telefone;
-    private String codigo;
 
+    private HashMap<String, Curso> cursos = new HashMap<String, Curso>();
+    
+    private Professor diretor;
 
     /*
         CONSTRUTORES
@@ -33,7 +34,7 @@ public class Departamento {
     }
 
     public HashMap<String, Curso> getCursosAssociados() {
-        return cursosAssociados;
+        return cursos;
     }
 
     public Professor getDiretor() {
@@ -61,7 +62,7 @@ public class Departamento {
     }
 
     public void setCursosAssociados(Curso cursoAssociado) {
-        this.cursosAssociados.put(cursoAssociado.getNome(), cursoAssociado);
+        this.cursos.put(cursoAssociado.getNome(), cursoAssociado);
     }
 
     public void setDiretor(Professor diretor) {
