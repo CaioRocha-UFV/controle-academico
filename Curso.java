@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-import entities.GradeCurricular;
+//import entities.GradeCurricular;
 
 public class Curso {
     private String codigo;

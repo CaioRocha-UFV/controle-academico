@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import entities.Disciplina;
+// import entities.Disciplina;
 
 public class Historico {
     private HashMap<String, Disciplina> disciplinasCursadas;

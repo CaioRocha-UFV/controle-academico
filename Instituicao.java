@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.HashSet;
 
-import entities.Disciplina;
+// import entities.Disciplina;
 
 public class Instituicao {
     private String nome;

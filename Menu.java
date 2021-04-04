@@ -1,11 +1,11 @@
-package utils;
+// package utils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 // import entities.*;
 
-import entities.Disciplina;
-import entities.GradeCurricular;
+// import entities.Disciplina;
+// import entities.GradeCurricular;
 
 public class Menu {
     Scanner sc = new Scanner(System.in);
@@ -41,6 +41,8 @@ public class Menu {
                 case PESSOA:
                     break;
                 case ALUNO:
+                    TesteAluno();
+
                     break;
                 case PROFESSOR:
                     break;
@@ -78,6 +80,36 @@ public class Menu {
                 case ENCERRARPEDIDO:
             }
         } while (opcao != OpcaoMenu.ENCERRARPEDIDO);
+    }
+
+    void TesteAluno(){
+        //Scanner sc2 = new Scanner(System.in).useDelimiter("\\n");
+        
+        
+
+        String entrada1, entrada2;
+
+        entrada1 = sc.nextLine();
+        
+        System.out.println("Insira: NOME  CPF EMAIL CELULAR DATAANIVERSARIO");
+        entrada1 = sc.nextLine();
+        System.out.println("Insira: MATRICULA COEFICIENTE");
+        entrada2 = sc.nextLine();
+        String[] tokens1 = entrada1.split(" ");
+        String[] tokens2 = entrada2.split(" ");
+
+        // Controi o aluno
+        Aluno aluno = Aluno.builder()
+                .nome(tokens1[0])
+                .cpf(tokens1[1])
+                .email(tokens1[2])
+                .celular(tokens1[3])
+                .dataNascimento(tokens1[4])
+                .matricula(tokens2[0])
+                .coeficiente(Float.parseFloat(tokens2[1]))
+                .CriarAluno();
+        
+        System.out.println("\n" + aluno.toString() + "\n");
     }
 }
 
