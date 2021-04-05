@@ -22,6 +22,10 @@ public class Pessoa {
         this.dataNascimento = builder.dataNascimento;
     }
 
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
+
     @Override
     public String toString() {
         return "Pessoa [celular=" + celular + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + ", email=" + email

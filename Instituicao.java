@@ -15,6 +15,10 @@ public class Instituicao {
 
     public Instituicao(String nome){
         this.nome = nome;
+        this.disciplinas = new HashMap<String, Disciplina>();
+        this.professores = new HashMap<String, Professor>();
+        this.cursos = new HashMap<String, Curso>();
+        this.departamentos = new HashMap<String, Departamento>();
     }
 
 
@@ -46,20 +50,20 @@ public class Instituicao {
         this.nome = nome;
     }
 
-    public void setDisciplina(HashMap<String, Disciplina> disciplinas){
-        this.disciplinas = disciplinas;
+    public void setDisciplina(String nomeDisciplina, Disciplina disciplina){
+        this.disciplinas.put(nomeDisciplina, disciplina);
     }
 
-    public void setProfessores(HashMap<String, Professor> professores){
-        this.professores = professores;
+    public void setProfessores(String nomeProfessor, Professor professores){
+        this.professores.put(nomeProfessor, professores);
     }
 
-    public void  setCursos(HashMap<String, Curso> cursos){
-        this.cursos = cursos;
+    public void  setCursos(String codigoCurso, Curso cursos){
+        this.cursos.put(codigoCurso, cursos);
     }
 
-    public void setDepartamentos(HashMap<String, Departamento> departamentos){
-        this.departamentos = departamentos;
+    public void setDepartamentos(String codigo, Departamento departamentos){
+        this.departamentos.put(codigo, departamentos);
     }
 
 

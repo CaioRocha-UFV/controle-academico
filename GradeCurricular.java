@@ -6,6 +6,7 @@ import java.util.List;
 public class GradeCurricular {
     private String ano;
     private int totalCredito;
+    private ArrayList<Semestre> grade;
 
     
     /*
@@ -13,6 +14,7 @@ public class GradeCurricular {
     */
     public GradeCurricular(String ano) {
         this.ano = ano;
+        grade = new ArrayList<Semestre>();
         // this.nomeDisciplina = nomeDisciplina;
         // this.totalCredito = totalCredito;
     }

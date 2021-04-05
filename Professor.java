@@ -8,6 +8,12 @@ public class Professor extends Pessoa{
     boolean coordenador;
 
 
+
+    public Professor (String nomeProf){
+        super(nomeProf);
+        setNome(nomeProf);
+    }
+
     protected Professor (Builder builder){
         super(builder);
 

@@ -5,14 +5,40 @@ import java.util.HashMap;
 
 public class Historico {
 
-    private HashMap<String, Disciplina> disciplinasCursadas;
 
+    private ArrayList<Semestre> historico;
+    private double pontosAtividadesComplementares;
+
+    public Historico(){
+        this.historico = new ArrayList<Semestre>();
+        this.pontosAtividadesComplementares = 0;
+    }
+
+    public ArrayList<Semestre> getHistorico() {
+        return historico;
+    }
+
+    public void setHistorico(Semestre semestreCursado) {
+        this.historico.add(semestreCursado);
+    }
+
+    public double getPontosAtividadesComplementares() {
+        return pontosAtividadesComplementares;
+    }
+
+    public void AcrescetarPontosAtividades(double pontos){
+        this.pontosAtividadesComplementares += pontos;
+    }
+
+
+
+
+    /*
+    private HashMap<String, Disciplina> disciplinasCursadas;
     public Historico(HashMap<String, Disciplina> disciplinasCursadas){
         this.disciplinasCursadas = disciplinasCursadas;
     }
-    
-    
-    
+    */
     
     
     //private ArrayList<Double> notas;
@@ -32,7 +58,7 @@ public class Historico {
     // Getters
     public HashMap<String, Disciplina> getDisciplinasCursadas() {
         return disciplinasCursadas;
-    }
+    } 
 
     public ArrayList<Double> getNotas() {
         return notas;
