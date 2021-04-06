@@ -1,7 +1,7 @@
-package Control;
+package control;
 
-import Model.*;
-import View.*;
+import model.*;
+import view.*;
 
 import java.util.HashMap;
 

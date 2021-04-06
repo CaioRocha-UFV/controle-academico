@@ -1,7 +1,9 @@
-package Model;
+package model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import control.Semestre;
 
 // import entities.Disciplina;
 
