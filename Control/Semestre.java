@@ -1,3 +1,8 @@
+package Control;
+
+import Model.*;
+import View.*;
+
 import java.util.HashMap;
 
 public class Semestre {

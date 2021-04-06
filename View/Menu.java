@@ -1,8 +1,10 @@
-// package utils;
+package View;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-// import entities.*;
+
+import Model.*;
 
 // import entities.Disciplina;
 // import entities.GradeCurricular;

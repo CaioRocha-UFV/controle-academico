@@ -1,3 +1,7 @@
+package Control;
+
+import Model.*;
+import View.*;
 
 public class Sistema{
 
