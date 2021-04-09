@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-import control.Semestre;
+
 
 public class GradeCurricular {
     private String ano;
@@ -20,6 +20,15 @@ public class GradeCurricular {
         // this.nomeDisciplina = nomeDisciplina;
         // this.totalCredito = totalCredito;
     }
+
+    public void ExibirGradeCurricular(){
+        System.out.println("-------------Grade curricular-------------");
+        for (Semestre semestre : this.grade){
+            semestre.ExibirSemestre();
+        }
+        System.out.println("------------------------------------------");
+    }
+
 
     /*
         SETTERS

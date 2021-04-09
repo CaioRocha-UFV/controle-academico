@@ -1,6 +1,6 @@
 package model;
 
-import control.Semestre;
+
 
 public class Aluno extends Pessoa {
     String matricula;

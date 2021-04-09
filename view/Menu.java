@@ -59,7 +59,7 @@ public class Menu {
                     professor = sc.nextLine();
                     System.out.print("Digite a quantidade de créditos da disciplina: ");
                     qntCreditos = sc.nextInt();
-                    Disciplina temp = new Disciplina(nome, professor, qntCreditos);
+                    Disciplina temp = new Disciplina(nome, professor, qntCreditos, "CCF");
                     disciplinas.add(temp);
                     Disciplina.mostrarDisciplinas(disciplinas);
                     break;

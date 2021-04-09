@@ -17,11 +17,10 @@ public class Departamento {
         CONSTRUTORES
     */
 
-    public Departamento(String nome, String codigo, Professor diretor, String email, String telefone){
+    public Departamento(String nome, String codigo, String email, String telefone){
 
         this.setNome(nome);
         this.setCodigo(codigo);
-        this.setDiretor(diretor);
         this.setEmail(email);
         this.setEmail(email);
         this.setTelefone(telefone);

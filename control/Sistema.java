@@ -5,6 +5,7 @@ import view.*;
 
 public class Sistema{
 
+    /*
     Instituicao ufv = new Instituicao("Universidade Federal de Viçosa");
     Professor diretor = new Professor("Diretor");
     Departamento dep_Mat = new Departamento("Dep Matematica", "MAT001", diretor, "depmat.ufv.br", "3838-1111");
@@ -27,5 +28,6 @@ public class Sistema{
     public void ExibirConexao(){
 
     }
+    */
 
 }

@@ -3,7 +3,6 @@ package model;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import control.Semestre;
 
 // import entities.Disciplina;
 
@@ -16,6 +15,14 @@ public class Historico {
     public Historico(){
         this.historico = new ArrayList<Semestre>();
         this.pontosAtividadesComplementares = 0;
+    }
+
+    public void ExibirGradeCurricular(){
+        System.out.println("-------------HISTORICO-------------");
+        for (Semestre semestre : this.historico){
+            semestre.ExibirSemestre();
+        }
+        System.out.println("-----------------------------------");
     }
 
     public ArrayList<Semestre> getHistorico() {

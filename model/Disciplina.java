@@ -3,21 +3,29 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Disciplina {
-    private int quantidade;
+    //private int quantidade;
     private String nome;
     private String professor;
     private int qntCreditos;
+    private String codigo;
 
 
     /*
         CONSTRUTORES
     */
-    public Disciplina(String nome, String professor, int qntCreditos) {
+    public Disciplina(String nome, String professor, int qntCreditos, String codigo) {
         this.nome = nome;
         this.professor = professor;
         this.qntCreditos = qntCreditos;
-        this.quantidade = 0;
+        this.codigo = codigo;
+        
+    }
+
+    public void ExibirDisciplina(){
+
+        System.out.printf("%s - %s - Professor: %s - Creditos: %d", this.nome, this.codigo, this.professor, this.qntCreditos);
     }
 
     /*
@@ -46,19 +54,23 @@ public class Disciplina {
         return nome;
     }
 
+    /*
     public int getQuantidade(){
         return quantidade;
     }
+    */
 
     public int getQntCreditos(){
         return qntCreditos;
     }
 
+    /*
     public void adicionarDisciplina(String nome, String professor) {
         List<Disciplina> novaDisciplina = new ArrayList<Disciplina>();
         novaDisciplina.add(new Disciplina(nome, professor, qntCreditos));
         this.quantidade++;
     }
+    */
 
     /*
         METODOS
