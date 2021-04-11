@@ -6,7 +6,7 @@ import java.util.List;
 
 
 public class GradeCurricular {
-    private String ano;
+    private int ano;
     private int totalCredito;
     private ArrayList<Semestre> grade;
 
@@ -14,7 +14,7 @@ public class GradeCurricular {
     /*
         CONSTRUTORES
     */
-    public GradeCurricular(String ano) {
+    public GradeCurricular(int ano) {
         this.ano = ano;
         grade = new ArrayList<Semestre>();
         // this.nomeDisciplina = nomeDisciplina;
@@ -29,11 +29,25 @@ public class GradeCurricular {
         System.out.println("------------------------------------------");
     }
 
+    public void AdicionarSemestreGrade(Semestre semestre){
+
+        this.grade.add(semestre);
+    }
+
+    public Semestre RetornarSemetre(int numSemetre){
+
+        for (Semestre semestre : this.grade){
+            if (semestre.getnumeroSemetre() == numSemetre){
+                return semestre;
+            }
+        }
+        return null;
+    }
 
     /*
         SETTERS
     */
-    public void setAno(String ano) {
+    public void setAno(int ano) {
         this.ano = ano;
     }
 
@@ -41,10 +55,12 @@ public class GradeCurricular {
         this.totalCredito = totalCredito;
     }
 
+
+
     /*
         GETTERS
     */
-    public String getAno() {
+    public int getAno() {
         return ano;
     }
 

@@ -100,8 +100,8 @@ public class Professor extends Pessoa{
     }
 
 
-    public void setDisciplinasLecionadas(HashMap<String, Disciplina> disciplinasLecionadas) {
-        this.disciplinasLecionadas = disciplinasLecionadas;
+    public void setDisciplinasLecionadas(Disciplina disciplina) {
+        this.disciplinasLecionadas.put(disciplina.getCodigo(), disciplina);
     }
 
 

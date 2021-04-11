@@ -20,12 +20,10 @@ public class Curso {
     /*
         CONSTRUTORES
     */
-    public Curso(String id, String nome, Professor coordenador, GradeCurricular grade){
+    public Curso(String id, String nome){
 
         this.setCodigo(id);
         this.setNome(nome);
-        this.setCoordenador(coordenador);
-        this.setGradePadrao(grade);
     }
 
     /*

@@ -37,5 +37,13 @@ public class Semestre {
         }
         return totalcreditos;
     }
-    
+
+    public int getnumeroSemetre(){
+        return this.numeroSemestre;
+    }
+
+    public void AdicionarDisciplina(Disciplina disciplina){
+
+        this.semestre.put(disciplina.getCodigo(), disciplina);
+    }
 }

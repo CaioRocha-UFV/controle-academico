@@ -7,7 +7,7 @@ import java.util.List;
 public class Disciplina {
     //private int quantidade;
     private String nome;
-    private String professor;
+    private Professor professor;
     private int qntCreditos;
     private String codigo;
 
@@ -15,9 +15,8 @@ public class Disciplina {
     /*
         CONSTRUTORES
     */
-    public Disciplina(String nome, String professor, int qntCreditos, String codigo) {
+    public Disciplina(String nome, int qntCreditos, String codigo) {
         this.nome = nome;
-        this.professor = professor;
         this.qntCreditos = qntCreditos;
         this.codigo = codigo;
         
@@ -31,7 +30,7 @@ public class Disciplina {
     /*
         SETTERS
     */
-    public void setProfessor(String professor) {
+    public void setProfessor(Professor professor) {
         this.professor = professor;
     }
     
@@ -46,7 +45,7 @@ public class Disciplina {
     /*
         GETTERS
     */
-    public String getProfessor() {
+    public Professor getProfessor() {
         return professor;
     }
 
@@ -62,6 +61,10 @@ public class Disciplina {
 
     public int getQntCreditos(){
         return qntCreditos;
+    }
+
+    public String getCodigo(){
+        return this.codigo;
     }
 
     /*

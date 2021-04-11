@@ -29,7 +29,7 @@ public class Instituicao {
         return this.nome;
     }
 
-    public HashMap<String, Disciplina> getDisciplina(){
+    public HashMap<String, Disciplina> getDisciplinas(){
         return this.disciplinas;
     }
 
