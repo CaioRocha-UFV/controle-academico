@@ -3,7 +3,6 @@ package model;
 import java.util.HashMap;
 
 public class Professor extends Pessoa{
-    HashMap<String, Aluno> alunosOrientados;
     HashMap<String, Departamento> departamentos;
     HashMap<String, Disciplina> disciplinasLecionadas;
 
@@ -14,14 +13,72 @@ public class Professor extends Pessoa{
     public Professor (String nomeProf){
         super(nomeProf);
         setNome(nomeProf);
+        this.disciplinasLecionadas = new HashMap<>();
     }
 
+
+
+
+
+
+    // GETTERS E SETTERS
+
+    public HashMap<String, Departamento> getDepartamentos() {
+        return departamentos;
+    }
+
+
+    public void setDepartamentos(HashMap<String, Departamento> departamentos) {
+        this.departamentos = departamentos;
+    }
+
+
+    public HashMap<String, Disciplina> getDisciplinasLecionadas() {
+        return disciplinasLecionadas;
+    }
+
+
+    public void setDisciplinasLecionadas(Disciplina disciplina) {
+        this.disciplinasLecionadas.put(disciplina.getCodigo(), disciplina);
+    }
+
+
+    public boolean isCoordenador() {
+        return coordenador;
+    }
+
+
+    public void setCoordenador(boolean coordenador) {
+        this.coordenador = coordenador;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     protected Professor (Builder builder){
         super(builder);
 
 
         this.coordenador = builder.coordenador;
-        this.alunosOrientados = builder.alunosOrientados;
+        //this.alunosOrientados = builder.alunosOrientados;
         this.departamentos = builder.departamentos;
         this.disciplinasLecionadas = builder.disciplinasLecionadas;
     }
@@ -29,7 +86,7 @@ public class Professor extends Pessoa{
 
     @Override
     public String toString() {
-        return ">> Professor [" + super.toString() + "\n         alunosOrientados=" + alunosOrientados + ", coordenador=" + coordenador + ", departamentos="
+        return ">> Professor [" + super.toString() + "\n         alunosOrientados="  + ", coordenador=" + coordenador + ", departamentos="
                 + departamentos + ", disciplinasLecionadas=" + disciplinasLecionadas + "]";
     }
 
@@ -72,48 +129,4 @@ public class Professor extends Pessoa{
             return new Professor(this);
         }
     }
-
-
-    // GETTERS E SETTERS
-    public HashMap<String, Aluno> getAlunosOrientados() {
-        return alunosOrientados;
-    }
-
-
-    public void setAlunosOrientados(HashMap<String, Aluno> alunosOrientados) {
-        this.alunosOrientados = alunosOrientados;
-    }
-
-
-    public HashMap<String, Departamento> getDepartamentos() {
-        return departamentos;
-    }
-
-
-    public void setDepartamentos(HashMap<String, Departamento> departamentos) {
-        this.departamentos = departamentos;
-    }
-
-
-    public HashMap<String, Disciplina> getDisciplinasLecionadas() {
-        return disciplinasLecionadas;
-    }
-
-
-    public void setDisciplinasLecionadas(Disciplina disciplina) {
-        this.disciplinasLecionadas.put(disciplina.getCodigo(), disciplina);
-    }
-
-
-    public boolean isCoordenador() {
-        return coordenador;
-    }
-
-
-    public void setCoordenador(boolean coordenador) {
-        this.coordenador = coordenador;
-    }
-
-
-    
-}
+    */

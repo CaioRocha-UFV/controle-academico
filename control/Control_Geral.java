@@ -11,6 +11,10 @@ public class Control_Geral {
         this.instituicao = new Instituicao(nome);
     }
     
+    public Instituicao getInstituicao(){
+
+        return this.instituicao;
+    }
 
     public void AdicionarDepartamentoInstituicao(String nome, String codigo, String email, String telefone){
         Departamento dep = new Departamento(nome, codigo, email, telefone);
@@ -21,6 +25,7 @@ public class Control_Geral {
     public void AdicionarCursoInstituicao(String id, String nome){
         Curso curso = new Curso(id, nome);
 
+        //System.out.println(curso.getNome());
         this.instituicao.setCursos(curso.getCodigo(), curso);
     }
 
@@ -43,12 +48,13 @@ public class Control_Geral {
 
         GradeCurricular grade = new GradeCurricular(ano);
 
+        System.out.println(this.instituicao.getCursos().get(codigoCurso).getNome());
         this.instituicao.getCursos().get(codigoCurso).setGradePadrao(grade);
     }
 
-    public void AdicionarSemetreGradeCurso(String codigoCurso, int ano){
+    public void AdicionarSemetreGradeCurso(String codigoCurso, int numeroSemestre){
 
-        Semestre semestre = new Semestre(ano);
+        Semestre semestre = new Semestre(numeroSemestre);
 
         this.instituicao.getCursos().get(codigoCurso).getGradePadrao().AdicionarSemestreGrade(semestre);
     }
@@ -73,7 +79,7 @@ public class Control_Geral {
 
         Disciplina disciplina = this.instituicao.getDisciplinas().get(codigoDiscp);
 
-        disciplina.setProfessor(professor);
+        disciplina.setProfessor(professor.getNome());
         professor.setDisciplinasLecionadas(disciplina);
     }
 

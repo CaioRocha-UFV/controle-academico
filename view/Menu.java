@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import control.Control_Geral;
 import model.*;
+import control.*;
 
 // import entities.Disciplina;
 // import entities.GradeCurricular;
@@ -13,6 +15,8 @@ public class Menu {
     Scanner sc = new Scanner(System.in);
     String nome, professor, ano;
     int qntCreditos;
+
+    Sistema sistema = new Sistema("UFV");
 
     List<Disciplina> disciplinas = new ArrayList<Disciplina>();
     List<GradeCurricular> grade = new ArrayList<GradeCurricular>();
@@ -41,9 +45,22 @@ public class Menu {
             switch (opcao) {
 
                 case PESSOA:
+                    sistema.CadastrarProfessores();
+                    sistema.CadastrarDisciplinas();
+                    sistema.CadastrarCurso();
+                    sistema.CadastrarDepartamento();
+                    sistema.CadastrarGrade();
+                    sistema.CadastrarSemestre();
+                    sistema.CadastrarDisciplinaSemestre();
+                    sistema.Conectar();
+
+                    System.out.println("Informacoes:");
+                    sistema.controladorGeral.getInstituicao().ExibirDisciplina();
+                    
+                    //System.out.println("Nome: " + sistema.controladorGeral.getInstituicao().getNome());
                     break;
                 case ALUNO:
-                    TesteAluno();
+                    //TesteAluno();
 
                     break;
                 case PROFESSOR:
@@ -51,6 +68,7 @@ public class Menu {
                 case CURSO:
                     break;
                 case DISCIPLINA:
+                /*
                     sc.nextLine();
 
                     System.out.print("Digite o nome da disciplina:");
@@ -59,19 +77,22 @@ public class Menu {
                     professor = sc.nextLine();
                     System.out.print("Digite a quantidade de créditos da disciplina: ");
                     qntCreditos = sc.nextInt();
-                    Disciplina temp = new Disciplina(nome, professor, qntCreditos, "CCF");
+                    //Disciplina temp = new Disciplina(nome, professor, qntCreditos, "CCF");
                     disciplinas.add(temp);
                     Disciplina.mostrarDisciplinas(disciplinas);
+                    */
                     break;
                 case ATIVIDADECOMPLEMENTAR:
                     break;
                 case GRADE:
+                /*
                     sc.nextLine();
                     System.out.print("Digite o ano da grade que deseja cadastrar: ");
                     ano = sc.nextLine();
-                    GradeCurricular temp2 = new GradeCurricular(ano);
+                    //GradeCurricular temp2 = new GradeCurricular(ano);
                     grade.add(temp2);
                     GradeCurricular.mostrarGrade(grade);
+                    */
                     break;
                 case HISTORICO:
                     break;
@@ -84,6 +105,8 @@ public class Menu {
         } while (opcao != OpcaoMenu.ENCERRARPEDIDO);
     }
 
+
+    /*
     void TesteAluno(){
         //Scanner sc2 = new Scanner(System.in).useDelimiter("\\n");
         
@@ -114,5 +137,6 @@ public class Menu {
         
         System.out.println("\n" + aluno.toString() + "\n");
     }
+    */
 }
 

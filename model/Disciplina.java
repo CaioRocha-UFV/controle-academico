@@ -7,7 +7,7 @@ import java.util.List;
 public class Disciplina {
     //private int quantidade;
     private String nome;
-    private Professor professor;
+    private String professor;
     private int qntCreditos;
     private String codigo;
 
@@ -24,13 +24,13 @@ public class Disciplina {
 
     public void ExibirDisciplina(){
 
-        System.out.printf("%s - %s - Professor: %s - Creditos: %d", this.nome, this.codigo, this.professor, this.qntCreditos);
+        System.out.printf("%s - %s - Professor: %s - Creditos: %d\n", this.nome, this.codigo, this.professor, this.qntCreditos);
     }
 
     /*
         SETTERS
     */
-    public void setProfessor(Professor professor) {
+    public void setProfessor( String professor) {
         this.professor = professor;
     }
     
@@ -45,7 +45,7 @@ public class Disciplina {
     /*
         GETTERS
     */
-    public Professor getProfessor() {
+    public String getProfessor() {
         return professor;
     }
 

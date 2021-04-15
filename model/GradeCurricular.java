@@ -72,6 +72,7 @@ public class GradeCurricular {
     /*
         METODOS
     */
+    /*
     public void cadastrarGradeCurricular(String ano){
         // int somaCreditos = 0;
 
@@ -93,6 +94,7 @@ public class GradeCurricular {
         + ano
         +"\n";
     }
+    */
     
     
 }

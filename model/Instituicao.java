@@ -3,6 +3,7 @@ package model;
 import java.util.HashMap;
 import java.util.HashSet;
 
+
 // import entities.Disciplina;
 
 public class Instituicao {
@@ -21,6 +22,17 @@ public class Instituicao {
         this.professores = new HashMap<String, Professor>();
         this.cursos = new HashMap<String, Curso>();
         this.departamentos = new HashMap<String, Departamento>();
+    }
+
+    public void ExibirDisciplina(){
+
+        for (String s : this.disciplinas.keySet()){
+
+            this.disciplinas.get(s).ExibirDisciplina();
+            System.out.println("");
+
+        }
+
     }
 
 
