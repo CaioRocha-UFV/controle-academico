@@ -64,6 +64,10 @@ public class Menu {
 
                     break;
                 case PROFESSOR:
+                    sistema.CadastrarProfessores();
+                    sistema.CadastrarDisciplinas();
+                    sistema.Conectar();
+                    sistema.controladorGeral.listarDisciplinasProfessores();
                     break;
                 case CURSO:
                     break;

@@ -84,4 +84,13 @@ public class Control_Geral {
     }
 
 
+    public void listarDisciplinasProfessores(){
+        for(var p: this.instituicao.getProfessores().keySet()){
+            Professor professor = this.instituicao.getProfessores().get(p);
+            System.out.println("Nome professor: " + professor.getNome());
+            professor.listarDisciplinas();
+        }
+    }
+
+
 }

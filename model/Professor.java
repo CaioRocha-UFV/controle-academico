@@ -51,6 +51,15 @@ public class Professor extends Pessoa{
     public void setCoordenador(boolean coordenador) {
         this.coordenador = coordenador;
     }
+
+    public void listarDisciplinas(){
+        System.out.println("-----------Disciplinas----------");
+        for (var d: this.disciplinasLecionadas.keySet()){
+            System.out.println(this.disciplinasLecionadas.get(d));
+        }
+        System.out.println("--------------------------------");
+        System.out.println("");
+    }
   
 }
 
