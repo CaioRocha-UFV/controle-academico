@@ -3,7 +3,7 @@ package model;
 import java.sql.Date;
 import java.util.HashMap;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     String cpf;
     String nome;
@@ -12,6 +12,12 @@ public class Pessoa {
     //Date dataNascimento;
     String dataNascimento;
 
+    public Pessoa(String nome, String email){
+        this.nome = nome;
+        this.email = email;
+    }
+
+    /*
     public static HashMap<String, Pessoa> todasAsPessoas;
 
     // TUTORIAL PARA A CONTRUÇÃO DO BUILDER
@@ -22,10 +28,6 @@ public class Pessoa {
         this.email = builder.email;
         this.celular = builder.celular;
         this.dataNascimento = builder.dataNascimento;
-    }
-
-    public Pessoa(String nome){
-        this.nome = nome;
     }
 
     @Override
@@ -80,7 +82,7 @@ public class Pessoa {
             return new Pessoa(this);
         }
     }
-
+    */
 
     // GETTERS E SETTERS
 

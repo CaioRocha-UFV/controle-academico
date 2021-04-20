@@ -19,13 +19,14 @@ public class Semestre {
 
 
     public void ExibirSemestre(){
-        System.out.println("Semestre: " + this.numeroSemestre);
-        System.out.println(("Disciplinas:"));
+        System.out.printf("                            Semestre: %d                            \n\n", this.numeroSemestre);
+        System.out.println(("Disciplinas:\n"));
         for (String codigoDisc : this.semestre.keySet()){
 
             this.semestre.get(codigoDisc).ExibirDisciplina();
         }
-        System.out.println(("----------------------------------------"));
+        System.out.println("Quantidade de creditos: " + ObterCreditosSemestre());
+        System.out.println(("------------------------------------------------------------------------------------"));
     }
 
     public int ObterCreditosSemestre(){

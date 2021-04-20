@@ -22,11 +22,13 @@ public class GradeCurricular {
     }
 
     public void ExibirGradeCurricular(){
-        System.out.println("-------------Grade curricular-------------");
+        System.out.println("################################## GRADE CURRICULAR ##################################");
+        System.out.println("");
         for (Semestre semestre : this.grade){
             semestre.ExibirSemestre();
+            System.out.println("\n");
         }
-        System.out.println("------------------------------------------");
+        System.out.println("######################################################################################");
     }
 
     public void AdicionarSemestreGrade(Semestre semestre){

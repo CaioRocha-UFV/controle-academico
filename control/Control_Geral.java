@@ -37,9 +37,9 @@ public class Control_Geral {
         this.instituicao.setDisciplina(disciplina.getCodigo(), disciplina);
     }
 
-    public void AdicionarProfessorInsituicao(String nomeProf){
+    public void AdicionarProfessorInsituicao(String nomeProf, String email){
 
-        Professor professor = new Professor(nomeProf);
+        Professor professor = new Professor(nomeProf, email);
 
         this.instituicao.setProfessores(professor.getNome(), professor);
     }
@@ -48,7 +48,7 @@ public class Control_Geral {
 
         GradeCurricular grade = new GradeCurricular(ano);
 
-        System.out.println(this.instituicao.getCursos().get(codigoCurso).getNome());
+        //System.out.println(this.instituicao.getCursos().get(codigoCurso).getNome());
         this.instituicao.getCursos().get(codigoCurso).setGradePadrao(grade);
     }
 
@@ -87,10 +87,28 @@ public class Control_Geral {
     public void listarDisciplinasProfessores(){
         for(var p: this.instituicao.getProfessores().keySet()){
             Professor professor = this.instituicao.getProfessores().get(p);
-            System.out.println("Nome professor: " + professor.getNome());
+            System.out.println("|------------------------------------------------|");
+            System.out.printf("  Nome professor: %s\n", professor.getNome());
+            System.out.printf("  E-mail: %s\n", professor.getEmail());
+            System.out.println("|------------------------------------------------|");
             professor.listarDisciplinas();
         }
     }
 
+    public void exibirGradeCurricularCurso(String codigoCurso){
+
+        GradeCurricular grade = this.instituicao.getCursos().get(codigoCurso).getGradePadrao();
+
+        grade.ExibirGradeCurricular();
+
+    }
+
+    public void exibirSemestreGrade(int numSemestre, String codigoCurso){
+
+        Semestre semestre = this.instituicao.getCursos().get(codigoCurso).getGradePadrao().RetornarSemetre(numSemestre);
+
+        semestre.ExibirSemestre();
+
+    }
 
 }

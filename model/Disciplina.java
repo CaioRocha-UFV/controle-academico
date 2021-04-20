@@ -24,7 +24,7 @@ public class Disciplina {
 
     public void ExibirDisciplina(){
 
-        System.out.printf("%s - %s - Professor: %s - Creditos: %d\n", this.nome, this.codigo, this.professor, this.qntCreditos);
+        System.out.printf("- %s - %s - Professor: %s - Creditos: %d\n", this.nome, this.codigo, this.professor, this.qntCreditos);
     }
 
     /*

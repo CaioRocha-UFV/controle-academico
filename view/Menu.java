@@ -15,14 +15,16 @@ public class Menu {
     Scanner sc = new Scanner(System.in);
     String nome, professor, ano;
     int qntCreditos;
+    String codigoCurso;
+    int numSemestre;
 
     Sistema sistema = new Sistema("UFV");
 
-    List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-    List<GradeCurricular> grade = new ArrayList<GradeCurricular>();
+    //List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+    //List<GradeCurricular> grade = new ArrayList<GradeCurricular>();
     
     OpcaoMenu[] opcaoMenu = OpcaoMenu.values();
-    OpcaoMenu opcao = OpcaoMenu.PESSOA; // Inicializando opcoes de menu
+    OpcaoMenu opcao = OpcaoMenu.DISCIPLINAS_INSTITUICAO; // Inicializando opcoes de menu
     
     public void mostrarMenu(){
             System.out.println("-----------------------------------------------------------------");
@@ -44,7 +46,7 @@ public class Menu {
 
             switch (opcao) {
 
-                case PESSOA:
+                case DISCIPLINAS_INSTITUICAO:
                     sistema.CadastrarProfessores();
                     sistema.CadastrarDisciplinas();
                     sistema.CadastrarCurso();
@@ -70,6 +72,26 @@ public class Menu {
                     sistema.controladorGeral.listarDisciplinasProfessores();
                     break;
                 case CURSO:
+                    sistema.CadastrarProfessores();
+                    sistema.CadastrarDisciplinas();
+                    sistema.CadastrarCurso();
+                    sistema.CadastrarDepartamento();
+                    sistema.CadastrarGrade();
+                    sistema.CadastrarSemestre();
+                    sistema.CadastrarDisciplinaSemestre();
+                    sistema.Conectar();
+
+
+                    System.out.println("Digite em cada linha o codigo do curso e o semestre a ser consultado:");
+                    System.out.println("OPCOES DISPONIVEIS -> curso : CDC , semestre -> (1-4)");
+                    System.out.print("> ");
+                    codigoCurso = this.sc.next();
+                    System.out.print("> ");
+                    numSemestre = this.sc.nextInt();
+
+                    sistema.getControladorGeral().exibirSemestreGrade(numSemestre, codigoCurso);
+
+
                     break;
                 case DISCIPLINA:
                 /*
@@ -89,14 +111,21 @@ public class Menu {
                 case ATIVIDADECOMPLEMENTAR:
                     break;
                 case GRADE:
-                /*
-                    sc.nextLine();
-                    System.out.print("Digite o ano da grade que deseja cadastrar: ");
-                    ano = sc.nextLine();
-                    //GradeCurricular temp2 = new GradeCurricular(ano);
-                    grade.add(temp2);
-                    GradeCurricular.mostrarGrade(grade);
-                    */
+                    sistema.CadastrarProfessores();
+                    sistema.CadastrarDisciplinas();
+                    sistema.CadastrarCurso();
+                    sistema.CadastrarDepartamento();
+                    sistema.CadastrarGrade();
+                    sistema.CadastrarSemestre();
+                    sistema.CadastrarDisciplinaSemestre();
+                    sistema.Conectar();
+
+                    System.out.println("Digite o codigo do curso a ser consultado:");
+                    System.out.println("OPCOES DISPONIVEIS -> curso : CDC");
+                    System.out.print("> ");
+                    codigoCurso = this.sc.next();
+
+                    sistema.getControladorGeral().exibirGradeCurricularCurso(codigoCurso);
                     break;
                 case HISTORICO:
                     break;
@@ -108,6 +137,10 @@ public class Menu {
             }
         } while (opcao != OpcaoMenu.ENCERRARPEDIDO);
     }
+
+}
+
+
 
 
     /*
@@ -142,5 +175,3 @@ public class Menu {
         System.out.println("\n" + aluno.toString() + "\n");
     }
     */
-}
-

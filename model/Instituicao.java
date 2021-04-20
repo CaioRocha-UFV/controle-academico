@@ -24,14 +24,22 @@ public class Instituicao {
         this.departamentos = new HashMap<String, Departamento>();
     }
 
+
+
+    
     public void ExibirDisciplina(){
 
+
+        System.out.println("############################### DISCIPLINAS-INSTITUICAO ###############################");
+        System.out.println("");
         for (String s : this.disciplinas.keySet()){
 
             this.disciplinas.get(s).ExibirDisciplina();
             System.out.println("");
 
         }
+
+        System.out.println("######################################################################################");
 
     }
 

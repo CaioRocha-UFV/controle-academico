@@ -10,8 +10,8 @@ public class Professor extends Pessoa{
 
 
 
-    public Professor (String nomeProf){
-        super(nomeProf);
+    public Professor (String nomeProf, String email){
+        super(nomeProf, email);
         setNome(nomeProf);
         this.disciplinasLecionadas = new HashMap<>();
     }
@@ -58,6 +58,7 @@ public class Professor extends Pessoa{
             System.out.println(this.disciplinasLecionadas.get(d));
         }
         System.out.println("--------------------------------");
+        System.out.println("              -*-               ");
         System.out.println("");
     }
   

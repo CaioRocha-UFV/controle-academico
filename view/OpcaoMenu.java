@@ -1,13 +1,13 @@
 package view;
 
 public enum OpcaoMenu {
-    PESSOA ("Pessoa"),
+    DISCIPLINAS_INSTITUICAO ("Disciplinas cadastradas na instituição de ensino"),
     ALUNO ("Aluno"),
-    PROFESSOR ("Professor"),
-    CURSO("Curso"),
+    PROFESSOR ("Disciplinas ministradas por cada professor"),
+    CURSO("Disciplinas obrigatorias de um semestre da grade"),
     DISCIPLINA("Disciplina"),
     ATIVIDADECOMPLEMENTAR("Atividade Complementar"),
-    GRADE("Grade"),
+    GRADE("Grade curricular de um determinado curso"),
     HISTORICO("Histórico"),
     INSTITUICAOENSINO("Instituição de Ensino"),
     DEPARTAMENTO("Departamento"),
@@ -40,5 +40,6 @@ public enum OpcaoMenu {
             System.out.print(opcao.ordinal()+1 + "-" + opcao.getOpcao() + "\n");
         }
         System.out.println();
+        System.out.println("OPCOES DISPONIVEIS -> 1-3-4-7");
     }
 }

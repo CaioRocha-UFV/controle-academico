@@ -11,6 +11,11 @@ public class Aluno extends Pessoa {
     Historico historico;
     Semestre semestreAtual;
 
+    public Aluno(String nome, String email){
+        super(nome, email);
+    }
+
+    /*
     // TUTORIAL PARA A CONTRUÇÃO DO BUILDER
     // https://ducmanhphan.github.io/2020-04-06-how-to-apply-builder-pattern-with-inhertitance/
 
@@ -64,6 +69,7 @@ public class Aluno extends Pessoa {
         }
     }
 
+    */
 
     // GETTERS E SETTERS 
     public String getMatricula() {

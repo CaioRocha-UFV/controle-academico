@@ -11,6 +11,10 @@ public class Sistema{
         this.controladorGeral = new Control_Geral(nomeInstituicao);
     }
 
+    public Control_Geral getControladorGeral(){
+        return this.controladorGeral;
+    }
+
     public Instituicao getInstituicaoControlador(){
 
         return this.controladorGeral.getInstituicao();
@@ -18,12 +22,12 @@ public class Sistema{
 
     public void CadastrarProfessores(){
         
-        this.controladorGeral.AdicionarProfessorInsituicao("Daniel");
-        this.controladorGeral.AdicionarProfessorInsituicao("Thais");
-        this.controladorGeral.AdicionarProfessorInsituicao("Fabricio");
-        this.controladorGeral.AdicionarProfessorInsituicao("Glaucia");
-        this.controladorGeral.AdicionarProfessorInsituicao("Nacif");
-        this.controladorGeral.AdicionarProfessorInsituicao("Marcus");
+        this.controladorGeral.AdicionarProfessorInsituicao("Daniel", "danielmendes@ufv.br");
+        this.controladorGeral.AdicionarProfessorInsituicao("Thais", "thais.braga@ufv.br");
+        this.controladorGeral.AdicionarProfessorInsituicao("Fabricio", "fabricio.asilva@ufv.br");
+        this.controladorGeral.AdicionarProfessorInsituicao("Glaucia", "glaucia@ufv.br");
+        this.controladorGeral.AdicionarProfessorInsituicao("Nacif", "jnacif@ufv.br");
+        this.controladorGeral.AdicionarProfessorInsituicao("Marcus", "marcus.mendes@ufv.br");
 
     }
 
@@ -115,7 +119,7 @@ public class Sistema{
     public void Conectar(){
 
         this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 221");
-        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 331");
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 330");
         this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 110");
         this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 251");
         this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 252");
