@@ -1,11 +1,6 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class Disciplina {
-    //private int quantidade;
     private String nome;
     private String professor;
     private int qntCreditos;
@@ -67,29 +62,4 @@ public class Disciplina {
         return this.codigo;
     }
 
-    /*
-    public void adicionarDisciplina(String nome, String professor) {
-        List<Disciplina> novaDisciplina = new ArrayList<Disciplina>();
-        novaDisciplina.add(new Disciplina(nome, professor, qntCreditos));
-        this.quantidade++;
-    }
-    */
-
-    /*
-        METODOS
-    */
-    public static void mostrarDisciplinas(List<Disciplina> disciplinas) {
-        System.out.println(disciplinas);
-    }
-    
-    public String toString(){
-        return "Disciplina: "
-        + nome
-        + "\nProfessor: "
-        + professor
-        + "\n"
-        + "Creditos: "
-        + qntCreditos
-        +"\n";
-    }
 }

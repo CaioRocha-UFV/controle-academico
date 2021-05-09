@@ -8,9 +8,7 @@ public class Departamento {
     private String nome;
     private String email;
     private String telefone;
-
     private HashMap<String, Curso> cursos = new HashMap<String, Curso>();
-    
     private Professor diretor;
 
     /*
@@ -22,8 +20,17 @@ public class Departamento {
         this.setNome(nome);
         this.setCodigo(codigo);
         this.setEmail(email);
-        this.setEmail(email);
         this.setTelefone(telefone);
+    }
+
+    public void ExibirDepartamento(){
+
+        System.out.println("----------------------------------------------");
+        System.out.println("Departamento " + this.nome + " - Código: " + this.codigo);
+        System.out.println("Diretor: " + this.diretor.getNome());
+        System.out.println("Contato:");
+        System.out.println("E-mail: " + this.email + " - Telefone: " + this.telefone);
+        System.out.println("----------------------------------------------");
     }
 
     /*

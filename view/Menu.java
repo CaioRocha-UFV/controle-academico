@@ -20,9 +20,6 @@ public class Menu {
 
     Sistema sistema = new Sistema("UFV");
 
-    //List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-    //List<GradeCurricular> grade = new ArrayList<GradeCurricular>();
-    
     OpcaoMenu[] opcaoMenu = OpcaoMenu.values();
     OpcaoMenu opcao = OpcaoMenu.DISCIPLINAS_INSTITUICAO; // Inicializando opcoes de menu
     
@@ -59,10 +56,18 @@ public class Menu {
                     System.out.println("Informacoes:");
                     sistema.controladorGeral.getInstituicao().ExibirDisciplina();
                     
-                    //System.out.println("Nome: " + sistema.controladorGeral.getInstituicao().getNome());
                     break;
                 case ALUNO:
-                    //TesteAluno();
+                    sistema.CadastrarProfessores();
+                    sistema.CadastrarDisciplinas();
+                    sistema.CadastrarCurso();
+                    sistema.CadastrarDepartamento();
+                    sistema.CadastrarGrade();
+                    sistema.CadastrarSemestre();
+                    sistema.CadastrarDisciplinaSemestre();
+                    sistema.Conectar();
+                    sistema.CadastrarAlunoSistema();
+                    sistema.getControladorGeral().ExibirDadosAluno();
 
                     break;
                 case PROFESSOR:

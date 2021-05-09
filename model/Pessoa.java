@@ -1,15 +1,11 @@
 package model;
 
-import java.sql.Date;
-import java.util.HashMap;
-
 public abstract class Pessoa {
 
     String cpf;
     String nome;
     String email;
     String celular;
-    //Date dataNascimento;
     String dataNascimento;
 
     public Pessoa(String nome, String email){

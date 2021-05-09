@@ -6,10 +6,6 @@ public class Professor extends Pessoa{
     HashMap<String, Departamento> departamentos;
     HashMap<String, Disciplina> disciplinasLecionadas;
 
-    boolean coordenador;
-
-
-
     public Professor (String nomeProf, String email){
         super(nomeProf, email);
         setNome(nomeProf);
@@ -40,16 +36,6 @@ public class Professor extends Pessoa{
 
     public void setDisciplinasLecionadas(Disciplina disciplina) {
         this.disciplinasLecionadas.put(disciplina.getCodigo(), disciplina);
-    }
-
-
-    public boolean isCoordenador() {
-        return coordenador;
-    }
-
-
-    public void setCoordenador(boolean coordenador) {
-        this.coordenador = coordenador;
     }
 
     public void listarDisciplinas(){

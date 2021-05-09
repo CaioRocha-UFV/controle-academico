@@ -2,19 +2,13 @@ package model;
 
 import java.util.HashMap;
 
-//import entities.GradeCurricular;
-
 public class Curso {
 
     private String codigo;
     private String nome;
-
     private Professor coordenador;
-
     private GradeCurricular gradePadrao;
-
     private HashMap<String, Professor> professores = new HashMap<String, Professor>();
-    private HashMap<String, Aluno> alunos = new HashMap<String, Aluno>();
 
 
     /*

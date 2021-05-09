@@ -6,11 +6,35 @@ import model.*;
 public class Control_Geral {
 
     private Instituicao instituicao;
+    private Aluno aluno;
 
     public Control_Geral(String nome){
         this.instituicao = new Instituicao(nome);
     }
     
+    public void CadastrarAluno(String nome, String email, String matricula){
+        this.aluno = new Aluno(nome, email, matricula);
+    }
+
+    public void RegistrarHistoricoAluno(int numSemestreAtual){
+
+        for (int i = 1; i < numSemestreAtual; i++){
+
+            Semestre semestreCursado = this.instituicao.getCursos().get("CDC").getGradePadrao().RetornarSemetre(i);
+            this.aluno.getHistorico().setHistorico(semestreCursado);
+        }
+    }
+
+    public void CadastrarSemestreAtual(int numSemestreAtual){
+        Semestre semestreAtual = this.instituicao.getCursos().get("CDC").getGradePadrao().RetornarSemetre(numSemestreAtual);
+        this.aluno.setSemestreAtual(semestreAtual);;
+    }
+
+    public void ExibirDadosAluno(){
+        this.aluno.ExibirDadosAluno();
+        
+    }
+
     public Instituicao getInstituicao(){
 
         return this.instituicao;

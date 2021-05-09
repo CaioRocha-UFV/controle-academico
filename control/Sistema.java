@@ -1,7 +1,6 @@
 package control;
 
 import model.*;
-import view.*;
 
 public class Sistema{
 
@@ -10,6 +9,14 @@ public class Sistema{
     public Sistema(String nomeInstituicao){
         this.controladorGeral = new Control_Geral(nomeInstituicao);
     }
+
+
+    public void CadastrarAlunoSistema(){
+        this.controladorGeral.CadastrarAluno("Magali", "magali@ufv.br", "M-1000");
+        this.controladorGeral.RegistrarHistoricoAluno(2);
+        this.controladorGeral.CadastrarSemestreAtual(2);
+    }
+
 
     public Control_Geral getControladorGeral(){
         return this.controladorGeral;

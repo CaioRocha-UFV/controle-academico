@@ -3,16 +3,27 @@ package model;
 
 
 public class Aluno extends Pessoa {
-    String matricula;
-    Float coeficiente;
+    private String matricula;
+    private Historico historico;
+    private Semestre semestreAtual;
 
-    Professor orientador;
-
-    Historico historico;
-    Semestre semestreAtual;
-
-    public Aluno(String nome, String email){
+    public Aluno(String nome, String email, String matricula){
         super(nome, email);
+        this.matricula = matricula;
+        this.historico = new Historico();
+    }
+
+    public void ExibirDadosAluno(){
+
+        System.out.println("---------------------------------------------------------");
+        System.out.println("                         DADOS                           ");
+        System.out.println("Nome: " + this.nome + " - E-mail: " + this.email);
+        System.out.println("Total de créditos já cursados: " + this.historico.ObterTotalCreditosGrade());
+        System.out.println("");
+        System.out.println("Semestre atual: ");
+        this.semestreAtual.ExibirSemestre();
+        System.out.println("---------------------------------------------------------");
+
     }
 
     /*
@@ -80,28 +91,12 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
 
-    public Float getCoeficiente() {
-        return coeficiente;
-    }
-
-    public void setCoeficiente(Float coeficiente) {
-        this.coeficiente = coeficiente;
-    }
-
-    public Professor getOrientador() {
-        return orientador;
-    }
-
-    public void setOrientador(Professor orientador) {
-        this.orientador = orientador;
-    }
-
     public Historico getHistorico() {
         return historico;
     }
 
-    public void setHistorico(Historico historico) {
-        this.historico = historico;
+    public void setHistorico(Semestre semestreCursado) {
+        this.historico.setHistorico(semestreCursado);
     }
 
     public Semestre getSemestreAtual() {
