@@ -64,4 +64,8 @@ public class GradeCurricular {
         return ano;
     }
 
+    public ArrayList<Semestre> getSemestres(){
+        return grade;
+    }
+
 }

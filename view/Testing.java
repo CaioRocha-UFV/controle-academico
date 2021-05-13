@@ -5,7 +5,7 @@ import model.*;
 // import utils.*;
 
 public class Testing {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         //Locale.setDefault(Locale.US);
         
             //CLASSE MENU FOI CRIADA PARA PERMITIR TESTAR A APLICAÇÃO5

@@ -1,5 +1,11 @@
 package control;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 import model.*;
 
 
@@ -133,6 +139,30 @@ public class Control_Geral {
 
         semestre.ExibirSemestre();
 
+    }
+
+    public int porcentagemCreditosCursados(String codigoCurso){
+        Semestre semestre = this.aluno.getSemestreAtual();
+        ArrayList<Semestre>  semestres = this.instituicao.getCursos().get(codigoCurso).getGradePadrao().getSemestres();
+        Collections.sort(semestres);
+        double porcentagem;
+        int creditos = 0;
+
+        for(Semestre s: semestres){
+            if(s.getnumeroSemetre() == semestre.getnumeroSemetre()){
+                break;
+            }
+            creditos += s.ObterCreditosSemestre();
+        }
+
+        System.out.println("Total creditos: " + this.instituicao.getCursos().get(codigoCurso).getGradePadrao().ObterTotalCreditosGrade());
+
+        porcentagem = (double) creditos/this.instituicao.getCursos().get(codigoCurso).getGradePadrao().ObterTotalCreditosGrade();
+        porcentagem *= 100;
+
+        System.out.println("Porcentagem: " + (int) porcentagem + "%");
+
+        return (int) porcentagem;
     }
 
 }

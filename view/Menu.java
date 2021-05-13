@@ -68,6 +68,7 @@ public class Menu {
                     sistema.Conectar();
                     sistema.CadastrarAlunoSistema();
                     sistema.getControladorGeral().ExibirDadosAluno();
+                    sistema.getControladorGeral().porcentagemCreditosCursados("CDC");
 
                     break;
                 case PROFESSOR:

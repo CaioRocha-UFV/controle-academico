@@ -5,7 +5,7 @@ public class Disciplina {
     private String professor;
     private int qntCreditos;
     private String codigo;
-
+    private int cargaHoraria;
 
     /*
         CONSTRUTORES
@@ -14,6 +14,7 @@ public class Disciplina {
         this.nome = nome;
         this.qntCreditos = qntCreditos;
         this.codigo = codigo;
+        this.cargaHoraria = qntCreditos * 15;
         
     }
 
@@ -60,6 +61,10 @@ public class Disciplina {
 
     public String getCodigo(){
         return this.codigo;
+    }
+
+    public int getcargaHoraria(){
+        return this.cargaHoraria;
     }
 
 }
