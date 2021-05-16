@@ -11,10 +11,10 @@ public class Sistema{
     }
 
 
-    public void CadastrarAlunoSistema(){
+    public void CadastrarAlunoSistema(int numeroSemestre){
         this.controladorGeral.CadastrarAluno("Magali", "magali@ufv.br", "M-1000");
-        this.controladorGeral.RegistrarHistoricoAluno(2);
-        this.controladorGeral.CadastrarSemestreAtual(2);
+        this.controladorGeral.RegistrarHistoricoAluno(numeroSemestre);
+        this.controladorGeral.CadastrarSemestreAtual(numeroSemestre);
     }
 
 

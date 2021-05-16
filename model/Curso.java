@@ -6,7 +6,6 @@ public class Curso {
 
     private String codigo;
     private String nome;
-    private Professor coordenador;
     private GradeCurricular gradePadrao;
     private HashMap<String, Professor> professores = new HashMap<String, Professor>();
 
@@ -31,10 +30,6 @@ public class Curso {
         return nome;
     }
 
-    public Professor getCoordenador() {
-        return coordenador;
-    }
-
     public GradeCurricular getGradePadrao() {
         return gradePadrao;
     }
@@ -55,10 +50,6 @@ public class Curso {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void setCoordenador(Professor coordenador) {
-        this.coordenador = coordenador;
     }
 
     public void setGradePadrao(GradeCurricular gradePadrao) {

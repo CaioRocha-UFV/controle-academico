@@ -25,12 +25,13 @@ public class Departamento {
 
     public void ExibirDepartamento(){
 
-        System.out.println("----------------------------------------------");
+        System.out.println("----------------------- DEPARTAMENTO -----------------------");
+        System.out.println("");
         System.out.println("Departamento " + this.nome + " - Código: " + this.codigo);
-        System.out.println("Diretor: " + this.diretor.getNome());
         System.out.println("Contato:");
         System.out.println("E-mail: " + this.email + " - Telefone: " + this.telefone);
-        System.out.println("----------------------------------------------");
+        System.out.println("");
+        System.out.println("------------------------------------------------------------");
     }
 
     /*

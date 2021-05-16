@@ -10,12 +10,13 @@ public class Historico {
         this.historico = new ArrayList<Semestre>();
     }
 
-    public void ExibirGradeCurricular(){
-        System.out.println("-------------HISTORICO-------------");
+    public void ExibirHistorico(){
+        System.out.println("----------------------------------- HISTORICO -----------------------------------");
+        System.out.println("\n\n");
         for (Semestre semestre : this.historico){
             semestre.ExibirSemestre();
         }
-        System.out.println("-----------------------------------");
+        System.out.println("---------------------------------------------------------------------------------");
     }
 
     public ArrayList<Semestre> getHistorico() {

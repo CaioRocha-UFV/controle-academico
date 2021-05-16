@@ -1,20 +1,13 @@
 package model;
 
 import java.util.HashMap;
-import java.util.HashSet;
-
-
-// import entities.Disciplina;
 
 public class Instituicao {
     private String nome;
-    private HashMap<String, Disciplina> disciplinas; //Disciplina? 
+    private HashMap<String, Disciplina> disciplinas;
     private HashMap<String, Professor> professores;
     private HashMap<String, Curso> cursos;
     private HashMap<String, Departamento> departamentos;
-
-    public static HashMap<String, Instituicao> todasAsInstituicoes;
-
 
     public Instituicao(String nome){
         this.nome = nome;
@@ -25,9 +18,7 @@ public class Instituicao {
     }
 
 
-
-    
-    public void ExibirDisciplina(){
+    public void ExibirDisciplinaInstituicao(){
 
 
         System.out.println("############################### DISCIPLINAS-INSTITUICAO ###############################");
@@ -88,8 +79,4 @@ public class Instituicao {
         this.departamentos.put(codigo, departamentos);
     }
 
-
-    
-
-    
 }

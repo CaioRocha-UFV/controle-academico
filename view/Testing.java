@@ -1,16 +1,13 @@
 package view;
 
-import java.util.Locale;
-import model.*;
-// import utils.*;
+import java.io.IOException;
 
 public class Testing {
-    public static void main(String[] args){
-        //Locale.setDefault(Locale.US);
-        
+    public static void main(String[] args) throws InterruptedException, IOException{
             //CLASSE MENU FOI CRIADA PARA PERMITIR TESTAR A APLICAÇÃO5
         
         Menu menu = new Menu();
+        menu.ExibirTelaInicio();
         menu.mostrarMenu();  
         
 

@@ -1,10 +1,7 @@
 package control;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 import model.*;
 
@@ -36,9 +33,13 @@ public class Control_Geral {
         this.aluno.setSemestreAtual(semestreAtual);;
     }
 
-    public void ExibirDadosAluno(){
+    public void ExibirDadosAlunoControle(){
         this.aluno.ExibirDadosAluno();
         
+    }
+
+    public void ExibirHistoricoAlunoControle(){
+        this.aluno.ExibirHistoricoAluno();
     }
 
     public Instituicao getInstituicao(){
@@ -117,10 +118,11 @@ public class Control_Geral {
     public void listarDisciplinasProfessores(){
         for(var p: this.instituicao.getProfessores().keySet()){
             Professor professor = this.instituicao.getProfessores().get(p);
-            System.out.println("|------------------------------------------------|");
-            System.out.printf("  Nome professor: %s\n", professor.getNome());
-            System.out.printf("  E-mail: %s\n", professor.getEmail());
-            System.out.println("|------------------------------------------------|");
+            System.out.println("|--------------------- PROFESSOR --------------------------|");
+            System.out.println("");
+            System.out.printf("Nome : %s\n", professor.getNome());
+            System.out.printf("E-mail: %s\n", professor.getEmail());
+            System.out.println("");
             professor.listarDisciplinas();
         }
     }
@@ -165,4 +167,8 @@ public class Control_Geral {
         return (int) porcentagem;
     }
 
+
+    public void ExibirDepartamentoControle(){
+        this.instituicao.getDepartamentos().get("IFF").ExibirDepartamento();
+    }
 }

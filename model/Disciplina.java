@@ -49,12 +49,6 @@ public class Disciplina {
         return nome;
     }
 
-    /*
-    public int getQuantidade(){
-        return quantidade;
-    }
-    */
-
     public int getQntCreditos(){
         return qntCreditos;
     }
