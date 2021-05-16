@@ -77,7 +77,7 @@ public class Menu {
                 case CURSO:
                     
                     System.out.println("Digite em cada linha o codigo do curso e o semestre a ser consultado:");
-                    System.out.println("OPCOES DISPONIVEIS -> curso : CDC , semestre -> (1-4)");
+                    System.out.println("OPCOES DISPONIVEIS -> curso : CDC , semestre -> (1-8)");
                     System.out.print("> ");
                     codigoCurso = this.sc.next();
                     System.out.print("> ");

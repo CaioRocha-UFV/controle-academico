@@ -75,7 +75,7 @@ public class Sistema{
         this.controladorGeral.AdicionarDisciplinaInstituicao("Sistemas Operacionais", 4, "CCF 451");
         this.controladorGeral.AdicionarDisciplinaInstituicao("Redes De Computadores", 4, "CCF 452");
         this.controladorGeral.AdicionarDisciplinaInstituicao("Laboratório de Física", 2, "FIF 225");
-        this.controladorGeral.AdicionarDisciplinaInstituicao("Cálculo Numérico", 4, "MAF 221");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Cálculo Numérico", 4, "MAF 271");
 
         this.controladorGeral.AdicionarDisciplinaInstituicao("Economia 1", 4, "ADF 104");
         this.controladorGeral.AdicionarDisciplinaInstituicao("Pesquisa Operacional 1", 4, "CCF 280");
@@ -116,6 +116,12 @@ public class Sistema{
         this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 2);
         this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 3);
         this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 4);
+        this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 5);
+        this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 6);
+        this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 7);
+        this.controladorGeral.AdicionarSemetreGradeCurso("CDC", 8);
+        
+
     }
 
     public void CadastrarDisciplinaSemestre(){
