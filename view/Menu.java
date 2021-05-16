@@ -47,7 +47,7 @@ public class Menu {
         do{    
             System.out.print("Selecione uma opção (9 para voltar ao menu):");
             int tmp = this.sc.nextInt();
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            //new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 
             while (tmp < OpcaoMenu.MINOPCOES || tmp > OpcaoMenu.MAXOPCOES){
                 System.out.println("-------------------------- MENU ---------------------------------");
@@ -57,7 +57,7 @@ public class Menu {
                 tmp = this.sc.nextInt();
             }
             opcao = opcaoMenu[tmp-1];
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            //new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 
             switch (opcao) {
                     

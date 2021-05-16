@@ -67,6 +67,31 @@ public class Sistema{
         this.controladorGeral.AdicionarDisciplinaInstituicao("Portugues Instrumental", 4, "LEF 100");
         this.controladorGeral.AdicionarDisciplinaInstituicao("Teoria Geral da Administracao", 2, "TGA 371");
 
+
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Gestão da Diversidade nas Organizações", 2, "ADF 334");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Fundamentos da Teoria Da Computação", 4, "CCF 131");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Engenharia de Software 1", 4, "CCF 220");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Introdução à Ciência dos Dados", 4, "CCF 425");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Sistemas Operacionais", 4, "CCF 451");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Redes De Computadores", 4, "CCF 452");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Laboratório de Física", 2, "FIF 225");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Cálculo Numérico", 4, "MAF 221");
+
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Economia 1", 4, "ADF 104");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Pesquisa Operacional 1", 4, "CCF 280");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Engenharia de Software 2", 4, "CCF 322");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Linguagem de Programação", 4, "CCF 340");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Sistemas Embarcados", 4, "CCF 351");
+        
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Atividades Complementares 2", 4, "CCF 291");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Projeto de Sistemas para Web", 4, "CCF 321");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Sistemas Distribuídos e Paralelos", 4, "CCF 355");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Compiladores", 4, "CCF 441");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Projeto Orientado Em Computação 1", 12, "CCF 496");
+        
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Matemática Financeira", 4, "ADF 281");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Computadores e Sociedade", 4, "CCF 495");
+        this.controladorGeral.AdicionarDisciplinaInstituicao("Projeto Orientado Em Computação 2", 12, "CCF 497");   
     }
 
     public void CadastrarCurso(){
@@ -120,6 +145,32 @@ public class Sistema{
         this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "FIF 203", 4);
         this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "TGA 371", 4);
         this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "LEF 100", 4);
+    
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "ADF 334", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 131", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 220", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 425", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 451", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 452", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "FIF 225", 5);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "MAF 271", 5);
+    
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "ADF 104", 6);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 280", 6);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 322", 6);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 340", 6);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 351", 6);
+
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 291", 7);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 321", 7);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 355", 7);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 441", 7);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 496", 7);
+        
+
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "ADF 281", 8);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 495", 8);
+        this.controladorGeral.AdicionarDisciplinaSemetreGradeCurso("CDC", "CCF 497", 8);
     }
 
 
