@@ -189,6 +189,55 @@ public class Sistema{
         this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 252");
         this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 211");
         this.controladorGeral.VincularProfessorDisciplina("Glaucia", "CCF 212");
+
+
+        this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 110");
+        this.controladorGeral.VincularProfessorDisciplina("Fabricio", "CCF 130");
+        this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 191");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 141");
+
+        this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 211");
+        this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 251");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "LEF 215");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 135");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 143");
+
+        this.controladorGeral.VincularProfessorDisciplina("Glaucia", "CCF 212");
+        this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 252");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "FIF 201");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "ADF 117");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 105");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 243");
+
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 221");
+        this.controladorGeral.VincularProfessorDisciplina("Fabricio", "CCF 313");
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 330");
+        this.controladorGeral.VincularProfessorDisciplina("Marcus", "CCF 331");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "FIF 203");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "TGA 371");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "LEF 100");
+    
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "ADF 334");
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 131");
+        this.controladorGeral.VincularProfessorDisciplina("Glaucia", "CCF 220");
+        this.controladorGeral.VincularProfessorDisciplina("Fabricio", "CCF 425");
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 451");
+        this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 452");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "FIF 225");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "MAF 271");
+    
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "ADF 104");
+        this.controladorGeral.VincularProfessorDisciplina("Marcus", "CCF 280");
+        this.controladorGeral.VincularProfessorDisciplina("Glaucia", "CCF 322");
+        this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 340");
+        this.controladorGeral.VincularProfessorDisciplina("Nacif", "CCF 351");
+
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "CCF 291");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "CCF 321");
+        this.controladorGeral.VincularProfessorDisciplina("Thais", "CCF 355");
+        this.controladorGeral.VincularProfessorDisciplina("Daniel", "CCF 441");
+        //this.controladorGeral.VincularProfessorDisciplina("CDC", "CCF 496");
+        
     }
 
 }

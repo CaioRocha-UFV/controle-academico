@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 import control.*;
 
-// import entities.Disciplina;
-// import entities.GradeCurricular;
-
 public class Menu {
     Scanner sc = new Scanner(System.in);
     String nome, professor, ano;
@@ -39,15 +36,16 @@ public class Menu {
 
         System.out.println("\n\n");
 
-
         System.out.println("########################### MENU ###########################");
         System.out.println("\n\n");
         OpcaoMenu.mostrarOpcoes();
         
-        do{    
+        do{
+
             System.out.print("Selecione uma opção (9 para voltar ao menu):");
             int tmp = this.sc.nextInt();
-            //new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            LimparTela();
+
 
             while (tmp < OpcaoMenu.MINOPCOES || tmp > OpcaoMenu.MAXOPCOES){
                 System.out.println("-------------------------- MENU ---------------------------------");
@@ -55,9 +53,10 @@ public class Menu {
                 OpcaoMenu.mostrarOpcoes();
                 System.out.print("Digite a operação que você deseja fazer: ");
                 tmp = this.sc.nextInt();
+
             }
             opcao = opcaoMenu[tmp-1];
-            //new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            LimparTela();
 
             switch (opcao) {
                     
@@ -124,5 +123,9 @@ public class Menu {
         System.out.println("");
         System.out.println("-----------------------------------------------------------");
         System.out.println("\n\n");
+    }
+
+    public void LimparTela() throws InterruptedException, IOException{
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
     }
 }
